@@ -1,0 +1,20 @@
+.login-bg {
+    background-color: #f8f9fa;
+    background-image: radial-gradient(#e9ecef 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dfe6e9;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.15);
+    border-color: #0984e3;
+    background: #fff;
+}

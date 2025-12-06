@@ -1,0 +1,126 @@
+/* App.css - Minimalist Refactor */
+
+/* Body styles are now handled in index.css */
+
+.app-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  color: var(--text-primary);
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  /* Removed text-shadow for cleaner look */
+}
+
+header p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+main {
+  background: transparent;
+  /* Removed white background container */
+  padding: 0;
+  /* Padding is handled by Layout container */
+  box-shadow: none;
+  /* Removed heavy shadow */
+  border-radius: 0;
+}
+
+.error-message {
+  background-color: #fff5f5;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border: 1px solid #feb2b2;
+  font-weight: 500;
+}
+
+.search-section {
+  margin: 1.5rem 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  background-color: var(--bg-secondary);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #f1f3f5;
+  border-color: #ced4da;
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #f8f9fa;
+}
+
+.pagination-info {
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pagination-btn {
+    width: 100%;
+  }
+}
